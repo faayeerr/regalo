@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ Hi Guapapa, can I be your silly husband? ♥</title>
+  <style>
+    .body {
+      background-color:   #8000FF;
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">♥ Hi Guapapa, HAPPY 10 MONTHS<33, I got a question for you: Can I be your silly husband? ♥</h1>
+  <img src="shrek.gif" alt="Shrek"/>
+  <br>
+  <button id="yes">😍😍Siiiii obvio😍😍</button>
+  <button id="no">😭Nooooo😭</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('💞Yayyyy we are going to marry💞');
+      alert('😱The wedding is tomorrow😱');
+      alert(' This will be the music 😍')
+      location.href = 'https://www.youtube.com/watch?v=9ni1BbREPHs';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
